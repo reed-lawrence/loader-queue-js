@@ -1,0 +1,33 @@
+{
+  "name": "loader-queue",
+  "version": "0.9.0",
+  "description": "Simple queue manager for dyanamic loading events",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && mocha",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reed-lawrence/loader-queue-js.git"
+  },
+  "keywords": [
+    "loader",
+    "loading",
+    "queue",
+    "manager"
+  ],
+  "author": "Reed Lawrence",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reed-lawrence/loader-queue-js/issues"
+  },
+  "homepage": "https://github.com/reed-lawrence/loader-queue-js#readme",
+  "dependencies": {
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@types/mocha": "^7.0.1",
+    "mocha": "^7.0.1"
+  }
+}
