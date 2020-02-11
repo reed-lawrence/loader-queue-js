@@ -35,6 +35,9 @@ interface IPromiseLike<T> {
 export class LoaderQueue {
   private _queue: LoaderQueueEvent[] = [];
 
+  /**
+   * RxJs Subject that emits all loading queue events
+   */
   public readonly events = new Subject<QueueEvent>();
 
   /**
@@ -105,6 +108,7 @@ export class LoaderQueue {
 
 
   /**
+   * Removes an event from the loading queue according to the string name provided
    * @param event event string to remove from the current loader stack
    * @param removeAll optional parameter to remove all instances or a single instance of the event string. (Default true)
    */

@@ -46,6 +46,9 @@ var QueueEventType;
 var LoaderQueue = /** @class */ (function () {
     function LoaderQueue() {
         this._queue = [];
+        /**
+         * RxJs Subject that emits all loading queue events
+         */
         this.events = new rxjs_1.Subject();
     }
     Object.defineProperty(LoaderQueue.prototype, "length", {
